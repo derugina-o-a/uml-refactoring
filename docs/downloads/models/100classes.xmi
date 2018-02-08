@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="StarUML" exporterVersion="2.0"/>
+	<uml:Model xmi:id="AAAAAAFZjw42ikH8IKU=" xmi:type="uml:Model" name="RootModel">
+		<packagedElement xmi:id="AAAAAAFF+qBWK6M3Z8Y=" name="Model" visibility="public" xmi:type="uml:Model">
+			<packagedElement xmi:id="AAAAAAFXJH2dJKcNZEY=" name="Character" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZjTsxRtvVouU=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZjTsxR9vWd3Q=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFXJH2dJKcNZEY="/>
+					<ownedEnd xmi:id="AAAAAAFZjTsxR9vXnF8=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFZjTnu79ktbus="/>
+					<memberEnd xmi:idref="AAAAAAFZjTsxR9vWd3Q="/>
+					<memberEnd xmi:idref="AAAAAAFZjTsxR9vXnF8="/>
+				</ownedMember>
+				<ownedMember xmi:id="AAAAAAFZjXJBZAQHWUc=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZjXJBZQQIooY=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFXJH2dJKcNZEY="/>
+					<ownedEnd xmi:id="AAAAAAFZjXJBZQQJ16o=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFZjWYv7t07KpM="/>
+					<memberEnd xmi:idref="AAAAAAFZjXJBZQQIooY="/>
+					<memberEnd xmi:idref="AAAAAAFZjXJBZQQJ16o="/>
+				</ownedMember>
+				<ownedAttribute xmi:id="AAAAAAFXJH/xcKec3Jg=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFXJIAGGKejyig=" name="name" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFXJIATMaeq8p8=" name="type" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZftlM89ULRAQ=" name="skills" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Skill[]"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedAttribute xmi:id="AAAAAAFZicclYWv6npg=" name="inventory" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Inventory"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedAttribute xmi:id="AAAAAAFZjRiutnLPPfk=" name="race" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Race"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedAttribute xmi:id="AAAAAAFZjTGDD7wqjVE=" name="professions" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Profession[]"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedAttribute xmi:id="AAAAAAFZjW1UDOyQbHs=" name="health" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjW2Acu29nKs=" name="mana" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedOperation xmi:id="AAAAAAFXJIAt36exGw8=" name="getId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXJIBZ+ae4Nu4=" name="setId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXJIBr2Ke/Lc4=" name="getName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXJICaAKfGoSA=" name="setName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXJIDZDafN0Ts=" name="getType" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXJIDv5afUie0=" name="setType" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXJIEhGqfbOmY=" name="Magician" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFXJIQGs6j7RGo=" name="useMagic" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXJIQ0eakCp/Y=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFXJIUcIakblI4=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFXJIEhGqfbOmY=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFXJIXA6KlT674=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXJIEhGqfbOmY=" contract="AAAAAAFXJIHwXahcf3Y="/>
+				<interfaceRealization xmi:id="AAAAAAFXJIXQvKlknYs=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXJIEhGqfbOmY=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXJIE74qgFBAQ=" name="Warrior" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFXJIRV+akJpD8=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFXJIUnWaksfmI=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFXJIE74qgFBAQ=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFXJIXgwql1yFI=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXJIE74qgFBAQ=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXJIF9PKgxXJI=" name="Hunter" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFXJISbfakQUWI=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFXJIUwrKk947w=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFXJIF9PKgxXJI=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFXJIXtuqmGDps=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXJIF9PKgxXJI=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXJIHwXahcf3Y=" name="UseMagicInterface" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFXJIIjGajJg5U=" name="useMagic" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXJIH+96iFX4o=" name="WeaponBehavior" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFXJIPM16jz240=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXmTvCjNdAWQw=" name="Archer" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFXmTxcZtePJiU=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFXmTvuitdqI74=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFXmTvCjNdAWQw=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFXmTwXfNd8knE=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXmTvCjNdAWQw=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFXmT1ZItea2Yg=" name="Cleric" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFXmT2HaNfEdUI=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFXmT2f+9fLXP4=" name="useMagic" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFXmT47r9f2EzM=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFXmT1ZItea2Yg=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFXmT3LNtfSV7Y=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXmT1ZItea2Yg=" contract="AAAAAAFXJIHwXahcf3Y="/>
+				<interfaceRealization xmi:id="AAAAAAFXmT3wAdfkpKY=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFXmT1ZItea2Yg=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZfSRGEw1oPFs=" name="Shaman" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFZfSSomA2THas=" name="useMagic" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZfSTIdQ2a7I8=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFZfSU7og2korI=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZfSRGEw1oPFs=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFZfSVp+A22Myc=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZfSRGEw1oPFs=" contract="AAAAAAFXJIHwXahcf3Y="/>
+				<interfaceRealization xmi:id="AAAAAAFZfSWhlQ3Jj8o=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZfSRGEw1oPFs=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZfSciHA3d4AM=" name="CharacterType1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFZfSdxfg4HJJk=" name="useMagic" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFZfSekmQ4OxM0=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZfSciHA3d4AM=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFZfSe2Yw4fzls=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZfSciHA3d4AM=" contract="AAAAAAFXJIHwXahcf3Y="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZfSfbqw4w4ho=" name="CharacterType2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFZfSfzFQ5a4KI=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFZfSgoZA5iI/U=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZfSfbqw4w4ho=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFZfSg19g5zP10=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZfSfbqw4w4ho=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZfSiXKA6EoqE=" name="CharacterType3" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedOperation xmi:id="AAAAAAFZfSjgaQ6uWZk=" name="useMagic" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZfSj+0g61/vc=" name="useWeapon" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<generalization xmi:id="AAAAAAFZfSkwoA68RE4=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZfSiXKA6EoqE=" general="AAAAAAFXJH2dJKcNZEY="/>
+				<interfaceRealization xmi:id="AAAAAAFZfSk6sw7N73M=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZfSiXKA6EoqE=" contract="AAAAAAFXJIHwXahcf3Y="/>
+				<interfaceRealization xmi:id="AAAAAAFZfSlEKw7eBUw=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZfSiXKA6EoqE=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZfto4vdUTym8=" name="Skill" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZftp7udU+YxE=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZftp7udU/g0k=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFZfto4vdUTym8="/>
+					<ownedEnd xmi:id="AAAAAAFZftp7udVAGUg=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFXJH2dJKcNZEY="/>
+					<memberEnd xmi:idref="AAAAAAFZftp7udU/g0k="/>
+					<memberEnd xmi:idref="AAAAAAFZftp7udVAGUg="/>
+				</ownedMember>
+				<ownedAttribute xmi:id="AAAAAAFZft3SfdvNekk=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZft3nXdv+KqQ=" name="type" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZft3+4Nwaqm8=" name="name" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZft5zDNxi9l0=" name="groupId" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedOperation xmi:id="AAAAAAFZft8butyx8po=" name="getId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft9uct0NWE4=" name="setId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft99md0plFo=" name="getType" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft+dXd1FJWw=" name="setType" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft+vi91h0AY=" name="getName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft+9Lt19R3g=" name="setName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft/MuN2Zc00=" name="getGroupId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZft/gdN21cdk=" name="setGroupId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZfttpt9YsROg=" name="SkillGroup1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft2itNtJUT0=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZfttpt9YsROg=" general="AAAAAAFZfto4vdUTym8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftukxNaT7H8=" name="SkillGorup2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft2vCttvLM0=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftukxNaT7H8=" general="AAAAAAFZfto4vdUTym8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftvkptc+kTk=" name="SkillGroup3" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft28pduVoVs=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftvkptc+kTk=" general="AAAAAAFZfto4vdUTym8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftwZ4NeMjT8=" name="Skill1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft1dudplghw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftwZ4NeMjT8=" general="AAAAAAFZfttpt9YsROg="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftwj3NfKj9s=" name="Skill2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft1pz9qL5Ts=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftwj3NfKj9s=" general="AAAAAAFZfttpt9YsROg="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftwu9dgI3Cg=" name="Skill4" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft1/hNrXB44=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftwu9dgI3Cg=" general="AAAAAAFZftukxNaT7H8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftw3aNhGOMs=" name="Skill6" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft2YF9sjm1A=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftw3aNhGOMs=" general="AAAAAAFZftvkptc+kTk="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftw/qtiEM1M=" name="Skill5" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft2Lfdr9/M8=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftw/qtiEM1M=" general="AAAAAAFZftvkptc+kTk="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZftxHYtjCH88=" name="Skill3" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZft11Utqx6mw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZftxHYtjCH88=" general="AAAAAAFZftukxNaT7H8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZicY8d2nrCeg=" name="Inventory" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZica0l2pFBuQ=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZica0l2pG7VA=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFZicY8d2nrCeg="/>
+					<ownedEnd xmi:id="AAAAAAFZica0l2pHHTs=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFXJH2dJKcNZEY="/>
+					<memberEnd xmi:idref="AAAAAAFZica0l2pG7VA="/>
+					<memberEnd xmi:idref="AAAAAAFZica0l2pHHTs="/>
+				</ownedMember>
+				<ownedAttribute xmi:id="AAAAAAFZic3HwHhFWUA=" name="items" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Item[]"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedAttribute xmi:id="AAAAAAFZic5onnnHoCs=" name="size" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZic6LFHpMuc0=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZic62eHqSOE8=" name="weight" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZic7W4XrYg2k=" name="itemsCount" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedOperation xmi:id="AAAAAAFZic9oA3t4Yz0=" name="getSize" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZic+GCnv9xTQ=" name="getId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZic+YcnxDklU=" name="getWeight" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZic+taXyJ3SY=" name="getItemsCount" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZic/N63zP30Y=" name="addItem" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZic/mp30V9cE=" name="deleteItem" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZic4sb3isggI=" name="Item" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZic5M1Hke6x0=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZic5M1HkfLp0=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFZic4sb3isggI="/>
+					<ownedEnd xmi:id="AAAAAAFZic5M1Hkgdgs=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFZicY8d2nrCeg="/>
+					<memberEnd xmi:idref="AAAAAAFZic5M1HkfLp0="/>
+					<memberEnd xmi:idref="AAAAAAFZic5M1Hkgdgs="/>
+				</ownedMember>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidGzLoG6va4=" name="ItemType1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidQeb46jgD0=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidGzLoG6va4=" general="AAAAAAFZidInxISv9Ik="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidG/DIIiMnA=" name="ItemType2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidQm947zRwE=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidG/DIIiMnA=" general="AAAAAAFZidInxISv9Ik="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidHIWoKKL28=" name="ItemGorup4" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidP43Y2LdLo=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidHIWoKKL28=" general="AAAAAAFZic4sb3isggI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidILqIPf8rI=" name="ItemGorup3" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidPtgY07fYw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidILqIPf8rI=" general="AAAAAAFZic4sb3isggI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidIZmoRHTog=" name="ItemGorup2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidPZu4yHUzU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidIZmoRHTog=" general="AAAAAAFZic4sb3isggI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidInxISv9Ik=" name="ItemGorup1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidPPfYw3++M=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidInxISv9Ik=" general="AAAAAAFZic4sb3isggI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidT7/o9Vy8w=" name="ItemType3" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidVNXpA9Gsc=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidT7/o9Vy8w=" general="AAAAAAFZidInxISv9Ik="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidVdy5CNqDk=" name="ItemType4" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidV/z5EjUjE=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidVdy5CNqDk=" general="AAAAAAFZidInxISv9Ik="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidXMbpGF0Ts=" name="ItemType5" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidYToZJk5kc=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidXMbpGF0Ts=" general="AAAAAAFZidIZmoRHTog="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidY+HZLG0UY=" name="ItemType6" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidcGd5YAC70=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidY+HZLG0UY=" general="AAAAAAFZidIZmoRHTog="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidZqp5NcD6E=" name="ItemType7" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidb8MJWwYAw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidZqp5NcD6E=" general="AAAAAAFZidIZmoRHTog="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidaVDpQ71g8=" name="ItemType8" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidcQvJZQgvY=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidaVDpQ71g8=" general="AAAAAAFZidILqIPf8rI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZida/TZTRZcc=" name="ItemType9" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidcclZagnXM=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZida/TZTRZcc=" general="AAAAAAFZidILqIPf8rI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZideiFZbwzBM=" name="ItemType12" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidkZnZ7RPV8=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZideiFZbwzBM=" general="AAAAAAFZidHIWoKKL28="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidexLJdqCgg=" name="ItemType11" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidkB2p4xRnE=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidexLJdqCgg=" general="AAAAAAFZidHIWoKKL28="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZide5QJfSgqc=" name="ItemType10" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidjqsp2Rxfc=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZide5QJfSgqc=" general="AAAAAAFZidHIWoKKL28="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidfBopg6EyE=" name="ItemType14" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidj0zp3hatg=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidfBopg6EyE=" general="AAAAAAFZidHIWoKKL28="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZidfK0Jiig98=" name="ItemType13" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZidkMip6B8tU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZidfK0Jiig98=" general="AAAAAAFZidHIWoKKL28="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRFWhD9HpU4=" name="Skill21" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRX322chmaI=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRFWhD9HpU4=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRFjSj+va/A=" name="Skill22" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRYK7WfBDk8=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRFjSj+va/A=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRFsREAXbcQ=" name="Skill15" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRZDTmlRlWE=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRFsREAXbcQ=" general="AAAAAAFZftvkptc+kTk="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRF2mEB/djU=" name="Skill16" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRZOnWmhEVc=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRF2mEB/djU=" general="AAAAAAFZftvkptc+kTk="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRGaaUFKUyw=" name="Skill17" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRZdDGnx+U4=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRGaaUFKUyw=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRGhvUGy/So=" name="Skill24" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRYfx2hhc7k=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRGhvUGy/So=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRGtIEIa9i0=" name="Skill19" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRYpo2ixHBs=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRGtIEIa9i0=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRG1iEKCNiE=" name="Skill23" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRYU12gRx+o=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRG1iEKCNiE=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRG/gULqjQU=" name="Skill18" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRYzhWkBaLo=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRG/gULqjQU=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRHMy0NSsbU=" name="Skill20" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRYBSGdxJlM=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRHMy0NSsbU=" general="AAAAAAFZjRJkzkhy5DE="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRHeAkPMqCQ=" name="Skill12" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRZovGpBdAA=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRHeAkPMqCQ=" general="AAAAAAFZftvkptc+kTk="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRHnr0Q0DJU=" name="Skill7" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRZ/02rhYJQ=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRHnr0Q0DJU=" general="AAAAAAFZfttpt9YsROg="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRHv8kScZqU=" name="Skill8" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRaKCmsxJh4=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRHv8kScZqU=" general="AAAAAAFZfttpt9YsROg="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRH6y0UEi0M=" name="Skill13" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRZ1RmqRxmo=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRH6y0UEi0M=" general="AAAAAAFZftvkptc+kTk="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRIEq0Vs/G4=" name="Skill10" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRafaWvRD60=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRIEq0Vs/G4=" general="AAAAAAFZfttpt9YsROg="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRIMr0XUDYE=" name="Skill14" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRbyuG5k+Yg=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRIMr0XUDYE=" general="AAAAAAFZftukxNaT7H8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRIXa0Y80D8=" name="Class17" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRbZ5W3LgKI=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRIXa0Y80D8=" general="AAAAAAFZftukxNaT7H8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRIeoEakHBQ=" name="Skill9" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRaT3GuBNmA=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRIeoEakHBQ=" general="AAAAAAFZfttpt9YsROg="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRIoFkcMns0=" name="Skill11" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRbGXm0yI00=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRIoFkcMns0=" general="AAAAAAFZftukxNaT7H8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRJGZkeqEhU=" name="Class20" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false"/>
+			<packagedElement xmi:id="AAAAAAFZjRJkzkhy5DE=" name="SkillGroup4" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRTqnmGd8hE=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRJkzkhy5DE=" general="AAAAAAFZfto4vdUTym8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRgMvnATKbY=" name="Race" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZjRkZXHNm+l4=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZjRkZXHNnGzI=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFZjRgMvnATKbY="/>
+					<ownedEnd xmi:id="AAAAAAFZjRkZXHNoccE=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFXJH2dJKcNZEY="/>
+					<memberEnd xmi:idref="AAAAAAFZjRkZXHNnGzI="/>
+					<memberEnd xmi:idref="AAAAAAFZjRkZXHNoccE="/>
+				</ownedMember>
+				<ownedAttribute xmi:id="AAAAAAFZjRhBOXDNTjM=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjRhSMXFSiB8=" name="name" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedOperation xmi:id="AAAAAAFZjRh7z3HOKeE=" name="getId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZjRiP/nJT0XY=" name="getName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRkzgXQGlZ8=" name="Dwarf" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRmhZXeuU64=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRkzgXQGlZ8=" general="AAAAAAFZjRgMvnATKbY="/>
+				<interfaceRealization xmi:id="AAAAAAFZjSBo0olAsi8=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjRkzgXQGlZ8=" contract="AAAAAAFZjR/uRoeMZZY="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRlAPXSDv2g=" name="HighElf" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRmrm3gTOXw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRlAPXSDv2g=" general="AAAAAAFZjRgMvnATKbY="/>
+				<interfaceRealization xmi:id="AAAAAAFZjR7g/YVlKRc=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjRlAPXSDv2g=" contract="AAAAAAFZjR5TT4MhnBw="/>
+				<interfaceRealization xmi:id="AAAAAAFZjSB094mlVz4=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjRlAPXSDv2g=" contract="AAAAAAFZjR/uRoeMZZY="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRlI9HUAIYo=" name="DarkElf" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRm1JHh41jo=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRlI9HUAIYo=" general="AAAAAAFZjRgMvnATKbY="/>
+				<interfaceRealization xmi:id="AAAAAAFZjR7xtoXKbuo=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjRlI9HUAIYo=" contract="AAAAAAFZjR5TT4MhnBw="/>
+				<interfaceRealization xmi:id="AAAAAAFZjSOXCY1kz3w=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjRlI9HUAIYo=" contract="AAAAAAFZjSMZYIuxw5k="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjRlZjHV9rdQ=" name="Human" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjRnBknjd52E=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjRlZjHV9rdQ=" general="AAAAAAFZjRgMvnATKbY="/>
+				<interfaceRealization xmi:id="AAAAAAFZjSVRlZLsYpM=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjRlZjHV9rdQ=" contract="AAAAAAFZjST+K5EjLg8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjR5TT4MhnBw=" name="ManaRegenerationTrait" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjR5vi4PECiE=" name="regenerateMana" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjR/uRoeMZZY=" name="HomeTeleportTrait" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjSA6A4jNVCs=" name="teleportHome" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSMZYIuxw5k=" name="SneakTrait" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjSNTPYzB3fo=" name="sneak" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSQJto52ZnY=" name="Popori" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSQoyY8w7CM=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSQJto52ZnY=" general="AAAAAAFZjRgMvnATKbY="/>
+				<interfaceRealization xmi:id="AAAAAAFZjSTEGJAB9cQ=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjSQJto52ZnY=" contract="AAAAAAFZjSMZYIuxw5k="/>
+				<interfaceRealization xmi:id="AAAAAAFZjSVEPpKHXIw=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjSQJto52ZnY=" contract="AAAAAAFZjST+K5EjLg8="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjST+K5EjLg8=" name="HorizonRunTrait" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjSWIeJPYNNo=" name="speedUp" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSojuJ1qB7I=" name="ItemGroup5" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false"/>
+			<packagedElement xmi:id="AAAAAAFZjSouBp3nD7U=" name="ItemType15" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSwtA6y/4Hw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSouBp3nD7U=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSo4DZ5k8n0=" name="ItemType16" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSw3uq0kcxg=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSo4DZ5k8n0=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSo/9J7hpmc=" name="ItemType18" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSxA7a2JqIw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSo/9J7hpmc=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSpHAZ9eBLY=" name="ItemType19" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSxUsa5TyUo=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSpHAZ9eBLY=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSpPkJ/bEvQ=" name="ItemType17" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSxKLa3u+pU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSpPkJ/bEvQ=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSpXAKBYtXQ=" name="ItemType22" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSx0/a+CQNU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSpXAKBYtXQ=" general="AAAAAAFZidInxISv9Ik="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSpfDKDV89I=" name="ItemType26" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSyvLbEWRlk=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSpfDKDV89I=" general="AAAAAAFZidHIWoKKL28="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSpo6KFS+l8=" name="ItemType24" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSyOCbBM7ZE=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSpo6KFS+l8=" general="AAAAAAFZidIZmoRHTog="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSpxSKHPVg8=" name="ItemType20" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSxfPa64RN4=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSpxSKHPVg8=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSqBbqJktUc=" name="ItemType25" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSyatrCxyLQ=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSqBbqJktUc=" general="AAAAAAFZidILqIPf8rI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSqKx6Lh79E=" name="ItemType21" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSxpBq8dd4c=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSqKx6Lh79E=" general="AAAAAAFZjSojuJ1qB7I="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjSqVOqNePv4=" name="ItemType23" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjSyBh6/nf8E=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjSqVOqNePv4=" general="AAAAAAFZidInxISv9Ik="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTIjNL9lzKI=" name="CraftingProfession" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZjTViGcUh2LQ=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZjTViGcUiDds=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFZjTIjNL9lzKI="/>
+					<ownedEnd xmi:id="AAAAAAFZjTViGcUjOWc=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFXJH2dJKcNZEY="/>
+					<memberEnd xmi:idref="AAAAAAFZjTViGcUiDds="/>
+					<memberEnd xmi:idref="AAAAAAFZjTViGcUjOWc="/>
+				</ownedMember>
+				<ownedAttribute xmi:id="AAAAAAFZjTZ4UsbcBeY=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjTaM/Me1mj8=" name="name" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjTahH8glAuU=" name="level" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedOperation xmi:id="AAAAAAFZjTa+ksjRHc0=" name="getId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZjTbQH8lB1sY=" name="getName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZjTbgOMmxuBE=" name="getLevel" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTQHysE1a5k=" name="Alchemy" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjTc7WcxflUU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTQHysE1a5k=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTQrAMHveh8=" name="WeaponCrafting" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjTdESszZ0oU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTQrAMHveh8=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTRtEMKpomM=" name="ArmorCrafting" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjTdNdM1TZ+I=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTRtEMKpomM=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTdow84Yc9Q=" name="CraftingProfession1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjTmZZdbTbtw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTdow84Yc9Q=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTdxn86qCrQ=" name="CraftingProfession2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjThBOdTdhSw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTdxn86qCrQ=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTd8kM88km0=" name="CraftingProfession3" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjThLb9VXqgw=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTd8kM88km0=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTeFm8/OANY=" name="CraftirngProfession4" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjThWV9XRSjU=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjTeFm8/OANY=" general="AAAAAAFZjTIjNL9lzKI="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjTnu79ktbus=" name="Map" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedAttribute xmi:id="AAAAAAFZjTobhNretcM=" name="characters" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Character[]"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedAttribute xmi:id="AAAAAAFZjWzJjui13lI=" name="mobs" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Mob[]"/>
+					</xmi:Extension>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjWYv7t07KpM=" name="Player" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedAttribute xmi:id="AAAAAAFZjWZfLd7ThOc=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjWaRhN+ggNc=" name="login" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjWav+eBb34Q=" name="characters" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false">
+					<xmi:Extension extender="StarUML">
+						<stereotype value="Character"/>
+					</xmi:Extension>
+				</ownedAttribute>
+				<ownedOperation xmi:id="AAAAAAFZjWZH0N4Zoig=" name="Operation1" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjWw8BeNW+sc=" name="Mob" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<ownedMember xmi:id="AAAAAAFZjW0riOrNBc4=" visibility="public" xmi:type="uml:Association" isDerived="false">
+					<ownedEnd xmi:id="AAAAAAFZjW0riOrOeDA=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="shared" isDerived="false" isID="false" type="AAAAAAFZjWw8BeNW+sc="/>
+					<ownedEnd xmi:id="AAAAAAFZjW0rierP284=" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false" type="AAAAAAFZjTnu79ktbus="/>
+					<memberEnd xmi:idref="AAAAAAFZjW0riOrOeDA="/>
+					<memberEnd xmi:idref="AAAAAAFZjW0rierP284="/>
+				</ownedMember>
+				<ownedAttribute xmi:id="AAAAAAFZjW21mu/m5VI=" name="id" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjW3UfPFnAuI=" name="name" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjW3mofJAmb0=" name="type" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjW4GkPMZPzI=" name="level" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjW4qMfRGLGI=" name="health" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedAttribute xmi:id="AAAAAAFZjW5AdvUfGkU=" name="mana" visibility="public" isStatic="false" isLeaf="false" isReadOnly="false" isOrdered="false" isUnique="false" xmi:type="uml:Property" aggregation="none" isDerived="false" isID="false"/>
+				<ownedOperation xmi:id="AAAAAAFZjW5rQPY3y7A=" name="getId" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZjW6FZPdksug=" name="getName" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZjW6Xzvf+Lzk=" name="getType" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+				<ownedOperation xmi:id="AAAAAAFZjW6pjfiYSRo=" name="getLevel" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXEu0PsJjU4=" name="Minion" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXFhg/xZbBY=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXEu0PsJjU4=" general="AAAAAAFZjWw8BeNW+sc="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXFrR/z9sqU=" name="NormalMonster" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXGVpv4jv2s=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXFrR/z9sqU=" general="AAAAAAFZjWw8BeNW+sc="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXGig/7HYms=" name="BossMonster" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXHbV//tm6I=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXGig/7HYms=" general="AAAAAAFZjWw8BeNW+sc="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXNJdQeED1Q=" name="NormalMonster1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXSj3RVVz5E=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXNJdQeED1Q=" general="AAAAAAFZjXFrR/z9sqU="/>
+				<interfaceRealization xmi:id="AAAAAAFZjv9Bg2sJXLo=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjXNJdQeED1Q=" contract="AAAAAAFXJIHwXahcf3Y="/>
+				<interfaceRealization xmi:id="AAAAAAFZjv/I93CeF2g=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjXNJdQeED1Q=" contract="AAAAAAFZjvuk7FCMDqw="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXNSWwhV8JA=" name="BossMonster1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXR9tBMq5kg=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXNSWwhV8JA=" general="AAAAAAFZjXGig/7HYms="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXNalQkmRHM=" name="NormalMonster2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXSwWBYOhwQ=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXNalQkmRHM=" general="AAAAAAFZjXFrR/z9sqU="/>
+				<interfaceRealization xmi:id="AAAAAAFZjv5872ZH9S4=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjXNalQkmRHM=" contract="AAAAAAFXJIHwXahcf3Y="/>
+				<interfaceRealization xmi:id="AAAAAAFZjv/V/XFXfI0=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjXNalQkmRHM=" contract="AAAAAAFZjvxQtVZwsXw="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXNi2Qn31a0=" name="Minion1" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXSJZhPj16c=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXNi2Qn31a0=" general="AAAAAAFZjXEu0PsJjU4="/>
+				<interfaceRealization xmi:id="AAAAAAFZjv/pC3IQRg4=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjXNi2Qn31a0=" contract="AAAAAAFZjvuk7FCMDqw="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjXNqxQrIN9E=" name="Minion2" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjXSYUhScd7Y=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjXNqxQrIN9E=" general="AAAAAAFZjXEu0PsJjU4="/>
+				<interfaceRealization xmi:id="AAAAAAFZjv9mi2vCWuI=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjXNqxQrIN9E=" contract="AAAAAAFXJIH+96iFX4o="/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjvtPUk5RqiA=" name="ByteBehavior" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjvzsNFjFziI=" name="byte" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjvuk7FCMDqw=" name="PoisonBehavior" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjv08v1qv0xE=" name="poison" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjvxQtVZwsXw=" name="ScratchBehavior" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Interface">
+				<ownedOperation xmi:id="AAAAAAFZjv2ERlw4Vc0=" name="scratch" visibility="public" isStatic="false" isLeaf="false" concurrency="sequential" isQuery="false" isAbstract="false" xmi:type="uml:Operation"/>
+			</packagedElement>
+			<packagedElement xmi:id="AAAAAAFZjwF2Zo0ie1c=" name="BossMonster12" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Class" isActive="false">
+				<generalization xmi:id="AAAAAAFZjwV4BcMaQ6g=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAFZjwF2Zo0ie1c=" general="AAAAAAFZjXGig/7HYms="/>
+				<interfaceRealization xmi:id="AAAAAAFZjwYX1Ms9pz4=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjwF2Zo0ie1c=" contract="AAAAAAFZjvtPUk5RqiA="/>
+				<interfaceRealization xmi:id="AAAAAAFZjwYlP8v2rRU=" visibility="public" xmi:type="uml:InterfaceRealization" implementingClassifier="AAAAAAFZjwF2Zo0ie1c=" contract="AAAAAAFZjvxQtVZwsXw="/>
+			</packagedElement>
+		</packagedElement>
+	</uml:Model>
+</xmi:XMI>
