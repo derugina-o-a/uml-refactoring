@@ -1,0 +1,23 @@
+<!--Body content-->
+<h2 class="header">Download page</h2>
+<div class="ui divider"></div>
+<h3 class="header">Download UML Refactoring tool</h3>
+<p>Realease version: 1.0.1.</p>
+<button class="ui right labeled icon button">
+  <i class="download icon"></i>
+  Download latest version
+</button>
+<div class="ui divider"></div>
+<h3 class="header">Download XMI models for your experiments</h3>
+<div class="ui divided items">
+  <div class="item"  ng-repeat="model in $ctrl.models">
+    <div class="content">
+      <div class="description">
+        <p>{{model.name}}</p>
+      </div>
+      <div class="extra">
+        <div class=" circular ui right floated icon button "><a href="{{model.url}}" download><i class="download icon"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
